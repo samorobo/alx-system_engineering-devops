@@ -1,3 +1,5 @@
+
+
 global
         log /dev/log    local0
         log /dev/log    local1 notice
@@ -38,7 +40,7 @@ defaults
 
 listen 19018-lb-01
         bind *:80
-        bind *:443 ssl crt /etc/letsencrypt/live/www.aysuarex.tech/aysuarex.pem
+        bind *:443 ssl crt /etc/letsencrypt/live/www.samorobo.tech/aysuarex.pem
         mode http
         redirect scheme https code 301 if !{ ssl_fc }
         balance roundrobin
