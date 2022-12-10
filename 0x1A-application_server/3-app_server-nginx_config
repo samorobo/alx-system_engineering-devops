@@ -49,7 +49,7 @@ server {
 		rewrite ^ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;
 	}
 
-	add_header X-Served-By 35979-web-01;
+	add_header X-Served-By 44252-web-01;
 
 	location / {
 		# First attempt to serve request as file, then
